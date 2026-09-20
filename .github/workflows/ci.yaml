@@ -18,12 +18,12 @@ jobs:
           python-version: 3.11
       - name: Install dependencies
         run: 
-          python -m pip install --upgrade pip
-          python -m pip install -r requirements.txt
+          python pip install --upgrade pip
+          python pip install -r requirements.txt
 
       - name: Run tests
         run: 
-          python -m pytest
+          python pytest
 
       - name: build docker image
         run: 
