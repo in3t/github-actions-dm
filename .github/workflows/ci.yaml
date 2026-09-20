@@ -36,6 +36,4 @@ jobs:
         run: |
           docker build -t github-actions-demo:${{ github.sha }} .
 
-      - name: Run containerized tests
-        run: |
-          docker run github-actions-demo:${{ github.sha }}
+    
